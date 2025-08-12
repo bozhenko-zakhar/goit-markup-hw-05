@@ -272,6 +272,7 @@ button {
 
 .team-image-info {
 	padding: 32px 0;
+	background-color: #FFFFFF;
 }
 
 .employee-name {
@@ -341,7 +342,7 @@ button {
 
 .portfolio-list {
 	display: flex;
-	gap: 24px;
+	gap: 48px 24px;
 	flex-wrap: wrap;
 }
 
@@ -433,11 +434,7 @@ button {
 	color: #F4F4FD;
 }
 
-.footer-social-info {
-
-}
-
-.social-info-heading {
+.footer-heading {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -445,12 +442,82 @@ button {
 	margin-bottom: 16px;
 }
 
+.footer-social-info {
+	margin-right: 80px;
+}
+
+.social-info-heading {
+	
+}
+
 .social-info-list {
 	display: flex;
 	gap: 16px;
 }
 
+.fotter-subscribe {}
+
+.footer-form {
+	display: flex;
+	gap: 24px;
+}
+
+.subscribe-label {}
+
+.subscribe-input {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background-color: transparent;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+	padding-left: 16px;
+	width: 264px;
+	height: 40px;
+
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: white;
+}
+
+.subscribe-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	border: none;
+	background-color: #4D5AE5;
+	border-radius: 4px;
+	padding: 8px 24px;
+	max-width: 165px;
+	height: 40px;
+
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-svg {
+	margin-left: 16px;
+}
+
 .footer-page .social-link:hover,
 .footer-page .social-link:focus {
 	background-color: #31D0AA;
+}
+
+.subscribe-input::placeholder {
+	color: #FFFFFF;
+}
+
+.subscribe-input:focus-within {
+	border: 1px solid #4D5AE5;
+	outline: none;
+}
+
+.subscribe-button:hover, 
+.subscribe-button:focus {
+	background: #404BBF;
 }
