@@ -359,7 +359,7 @@
 		</div>
 	</footer>
 
-	<div class="modal-overlay is-open">
+	<div class="modal-overlay">
 		<div class="modal">
 			<button type="button" class="modal-cross">
 				<svg width="8" height="8" class="modal-cross-svg">
@@ -415,5 +415,19 @@
 			</form>
 		</div>
 	</div>
+
+	<script>
+		const cross = document.getElementsByClassName('modal-cross')[0];
+		const subscribe = document.getElementsByClassName("subscribe-button")[0];
+		const modalOverlay = document.getElementsByClassName('modal-overlay')[0];
+
+		cross.addEventListener("click", () => {
+				modalOverlay.className = "modal-overlay";
+		});
+		subscribe.addEventListener("click", event => {
+				event.preventDefault();
+				modalOverlay.className = ("modal-overlay is-open");
+		});
+	</script>
 </body>
 </html>
